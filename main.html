@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            background-color: #fff0f3; /* Soft pink background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #d63384;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #6c757d;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s;
+            font-weight: bold;
+        }
+
+        /* Styling for the Yes button */
+        .btn-yes {
+            background-color: #ff4d6d;
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
+        }
+
+        .btn-yes:hover {
+            background-color: #ff758f;
+            transform: scale(1.1);
+        }
+
+        /* Styling for the No button */
+        .btn-no {
+            background-color: #adb5bd;
+            color: white;
+        }
+
+        .btn-no:hover {
+            background-color: #6c757d;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Vaishu,<br>Will you be my Valentine forever? 💗💞</h1>
+    <p>Choose wisely. (The "No" button is... shy.)</p>
+
+    <div class="btn-container">
+        <a href="finalpage.html">
+            <button class="btn-yes">Yes</button>
+        </a>
+
+        <a href="mainpage.html">
+            <button class="btn-no">No</button>
+        </a>
+    </div>
+
+</body>
+</html>

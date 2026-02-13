@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Valentine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 2px solid #fff;
+            max-width: 400px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #d63384;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .sub-text {
+            color: #b90eb9;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            color: #555;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .gif-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .footer-text {
+            font-size: 1.3rem;
+            color: #ff4d6d;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="C:\Users\nagar\OneDrive\Desktop\HTML\CSS\index1.html\kumkumala.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="card">
+        <h1>💖 YAY!!! 💖</h1>
+        <p class="sub-text">Happy Valentine's Day 🥰</p>
+        
+        <p class="message">"I don’t just want to be with you today — I want to wake up next to you for the rest of 👩‍❤️‍👨my life."</p>
+        
+        <div class="gif-container">
+            <img src="C:\Users\nagar\OneDrive\Desktop\HTML\CSS\index1.html\tenor.gif" alt="Cute Valentine GIF">
+        </div>
+        
+        <p class="footer-text">💕 I love You 😘🎉</p>
+        <p style="font-size: 0.7rem; color: #888;">(Click anywhere to play music)</p>
+    </div>
+     <a href="pic.html"><button>click on it You will get💝........🫶.......💘 </button></a>
+
+    <script>
+        // Browsers usually require a click to allow audio to play
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('bgMusic');
+            audio.play();
+        }, { once: true });
+    </script>
+
+</body>
+</html>
