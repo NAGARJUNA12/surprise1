@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Vaishu 💖</title>
+    <style>
+        /* Romantic Gradient Background */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #71ef43 0%, #ffc3a0 100%);
+            color: #5d2a42;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        #message {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            font-weight: 500;
+            min-height: 1.5em; /* Prevents jumping when text changes */
+            color: #d63384;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        /* The Yes Button */
+        .btn-yes {
+            background-color: #ff4d6d;
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
+            text-decoration: none;
+        }
+
+        .btn-yes:hover {
+            transform: scale(1.1);
+            background-color: #ff758f;
+        }
+
+        /* The No Button */
+        .btn-no {
+            background-color: #ffffff;
+            color: #ff4d6d;
+            border: 2px solid #ff4d6d;
+            position: relative;
+        }
+
+        /* Styles for when the button is disabled */
+        .btn-no:disabled {
+            background-color: #f0f0f0;
+            color: #ccc;
+            border: 2px solid #ccc;
+            cursor: not-allowed;
+            transform: scale(0.8);
+            opacity: 0.5;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="content">
+        <h1>Vaishu,</h1>
+        <h1>Will you be my Valentine? 💗💞</h1>
+        
+        <p id="message">Choose wisely. (The "No" button is... shy.)</p>
+
+        <div class="btn-container">
+            <button class="btn-no" id="noBtn" onmouseover="handleNoHover()">No</button>
+            
+            <a href="finalpage.html">
+                <button class="btn-yes">Yes!</button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let hoverCount = 0;
+        const noBtn = document.getElementById('noBtn');
+        const messageText = document.getElementById('message');
+
+        function handleNoHover() {
+            hoverCount++;
+
+            if (hoverCount === 1) {
+                messageText.innerText = "Please think again! 🥺";
+                noBtn.style.transform = "scale(0.9)";
+            } 
+            else if (hoverCount === 2) {
+                messageText.innerText = "This could be a mistake! 😰";
+                noBtn.style.transform = "scale(0.7)";
+            } 
+            else if (hoverCount >= 3) {
+                messageText.innerText = "Please No,😤";
+                noBtn.disabled = true;
+                noBtn.style.transform = "scale(0.6)";
+            }
+        }
+    </script>
+
+</body>
+</html>
